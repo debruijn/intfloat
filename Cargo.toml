@@ -1,0 +1,19 @@
+[package]
+name = "intfloat"
+version = "0.1.0"
+edition = "2021"
+description = "Fast and simple hashable float alternative using ints"
+license = "MIT OR Apache-2.0"
+documentation = "https://docs.rs/intfloat"
+repository = "https://github.com/debruijn/intfloat"
+authors = ["Bert de Bruijn"]
+keywords = ["intfloat", "float", "num", "num_trait"]
+
+[dependencies]
+num-traits = "0.2.19"
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
